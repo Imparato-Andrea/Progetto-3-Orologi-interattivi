@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(132, 169, 139, 0.7) 0%, rgba(114, 153, 139, 0.7) 35%, rgba(80, 170, 84, 0.7) 100%);
+    
+}
+
+
+.belt{
+    width: 120px;
+    height: 450px;
+    background-color: rgb(14, 14, 12);
+    box-shadow:0px 10px 15px rgba(0, 0, 0, 0.7), 
+    0px 4px 6px rgba(0, 0, 0, 0.3),  
+    inset 0px 3px 8px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .second{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .straphole{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark hole color */
+    border-radius: 50%; /* Round shape */
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3); /* Recessed look */
+    bottom: 5px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    
+  }
+  
+.watchbody{
+    text-align: center;
+    background-color:rgb(25, 26, 22);
+    width: 240px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow:0px 10px 15px rgba(0, 0, 0, 0.7), 
+    0px 4px 6px rgba(0, 0, 0, 0.3),  
+    inset 0px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.screen{
+  height: 80px;
+  width: 80%;
+  background-color: rgb(184, 135, 11);
+  margin-top: 15px;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  font-size: x-large;
+  border-radius: 10px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    grid-gap: 5px;
+    margin-top: 10px;
+    width: 80%; /* Adjusts to fit the width of the watchbody */
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; /* Same width as the screen */
+    margin-top: 10px;
+}
+
+.math, .time {
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: 45%; /* Ensure they take up equal width */
+}
+
+.math:hover,.time:hover{
+    background-color: rgba(237, 233, 23, 0.936);
+  }
+
+  .math:active,.time:active{
+    background-color: rgba(197, 194, 13, 0.936);;
+  }
+
+  
+  .number:active{
+      background-color: rgba(197, 194, 13, 0.936);
+  }
+
+
+.number,.operator,.equal{
+    height: 20px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.number:hover,.operator:hover,.equal:hover{
+  background-color: rgba(237, 233, 23, 0.936);
+}
+
+.number:active,.operator:active,.equal:active{
+    background-color: rgba(197, 194, 13, 0.936);
+}
+
+.operator{
+    font-size: 16px;
+    padding: px;
+}
+
+.buttons .operator:nth-child(16){
+    grid-row: span 2;
+    height: auto;
+}
+
+
+
+
+
+
